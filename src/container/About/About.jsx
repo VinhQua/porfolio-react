@@ -3,30 +3,8 @@ import "./About.scss";
 import { images } from "../../constants";
 import { client } from "../../client";
 import { useEffect, useState } from "react";
-//yputo0fje3wl
-//xtgVOw_Hz94krkTm629gYYdSC7K8fAHXGlWyUfabr5w
-// const about = [
-//   {
-//     title: "Web Development",
-//     description: "I am a good web developer",
-//     imgUrl: images.about01,
-//   },
-//   {
-//     title: "Frontend Development",
-//     description: "I am a good web developer",
-//     imgUrl: images.about02,
-//   },
-//   {
-//     title: "Backend Development",
-//     description: "I am a good web developer",
-//     imgUrl: images.about03,
-//   },
-//   {
-//     title: "MERN Stack",
-//     description: "I am a good web developer",
-//     imgUrl: images.about04,
-//   },
-// ];
+import { AppWrap } from "../../wrapper";
+
 const About = () => {
   const [abouts, setAbouts] = useState([]);
   useEffect(() => {
@@ -35,7 +13,7 @@ const About = () => {
         const res = await client.getEntries({
           content_type: "abouts",
         });
-        console.log(res);
+
         const abouts = res.items.map((item) => {
           const { title, imgUrl, detail } = item.fields;
           const imageurl = imgUrl?.fields?.file?.url;
@@ -79,4 +57,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "about");
