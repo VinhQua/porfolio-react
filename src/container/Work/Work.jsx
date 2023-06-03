@@ -35,7 +35,7 @@ const Work = () => {
         });
         setWorks(works);
         setFilterWork(works);
-        console.log(works);
+        // console.log(works);
       } catch (error) {
         console.log(error);
       }
