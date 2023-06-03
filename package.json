@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-icon": "^1.0.0",
     "react-icons": "^4.9.0",
+    "react-tooltip": "^5.13.1",
     "sass": "^1.62.1"
   },
   "devDependencies": {
