@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./NavBar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { images } from "../../constants";
+
 import { motion } from "framer-motion";
+import { navLinks } from "../../data";
+
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -11,7 +14,7 @@ const NavBar = () => {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "contact"].map((item, index) => {
+        {navLinks.map((item, index) => {
           return (
             <li className="app__flex p-text" key={`${item} -${index}`}>
               <div>

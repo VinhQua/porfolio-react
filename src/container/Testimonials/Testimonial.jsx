@@ -8,7 +8,9 @@ const Testimonial = () => {
   const [brands, setBrands] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const handleClick = (index) => {};
+  const handleClick = (index) => {
+    setCurrentIndex(index);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,6 +18,10 @@ const Testimonial = () => {
         const { items } = await client.getEntries({
           content_type: "testimonials",
         });
+        const { items: brandData } = await client.getEntries({
+          content_type: "brands",
+        });
+
         const testimonials = items.map((item) => {
           const { name, imageurl, feedback, company } = item.fields;
           const imgUrl = imageurl?.fields?.file?.url;
@@ -23,6 +29,13 @@ const Testimonial = () => {
         });
         setTestimonials(testimonials);
         // console.log(testimonials);
+        const brands = brandData.map((item) => {
+          const { name, image } = item.fields;
+          const imgUrl = image?.fields?.file?.url;
+          return { name, imgUrl };
+        });
+        // console.log(brands);
+        setBrands(brands);
       } catch (error) {
         console.log(error);
       }
@@ -70,9 +83,23 @@ const Testimonial = () => {
               <HiChevronRight />
             </div>
           </div>
+
+          <div className="app__testimonial-brands app__flex">
+            {brands.map((brand) => {
+              return (
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5, type: "tween" }}
+                  key={brand.id}
+                >
+                  <img src={brand.imgUrl} alt={brand.name} />
+                </motion.div>
+              );
+            })}
+          </div>
         </>
       )}
     </>
   );
 };
-export default AppWrap(Testimonial, "app__testimonial", "app__primarybg");
+export default AppWrap(Testimonial, "testimonials", "app__primarybg");

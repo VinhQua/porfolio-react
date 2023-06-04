@@ -1,9 +1,10 @@
 import React from "react";
+import { navLinks } from "../data";
 
 const NavigationDots = ({ active }) => {
   return (
     <div className="app__navigation">
-      {["home", "about", "work", "skills", "contact"].map((item, index) => {
+      {navLinks.map((item, index) => {
         return (
           <a
             key={item + index}

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Work.scss";
+import { projectType } from "../../data";
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -48,21 +49,19 @@ const Work = () => {
         My Creative <span>Portfolio</span> Section
       </h2>
       <div className="app__work-filter">
-        {["React", "NodeJs", "HTML && CSS", "E-Commerce", "All"].map(
-          (item, index) => {
-            return (
-              <div
-                key={index}
-                onClick={() => handleWorkFilter(item)}
-                className={`app__work-filter-item app_flex p-text ${
-                  activeFilter === item ? "item-active" : ""
-                }`}
-              >
-                {item}
-              </div>
-            );
-          }
-        )}
+        {projectType.map((item, index) => {
+          return (
+            <div
+              key={index}
+              onClick={() => handleWorkFilter(item)}
+              className={`app__work-filter-item app_flex p-text ${
+                activeFilter === item ? "item-active" : ""
+              }`}
+            >
+              {item}
+            </div>
+          );
+        })}
       </div>
       <motion.div
         animate={animateCard}
