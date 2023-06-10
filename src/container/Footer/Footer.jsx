@@ -48,6 +48,7 @@ const Footer = () => {
               className="p-text"
               name="name"
               id="name"
+              required
             />
           </div>
           <div className="app__flex">
@@ -59,6 +60,7 @@ const Footer = () => {
               className="p-text"
               name="email"
               id="email"
+              required
             />
           </div>
           <div>
@@ -69,6 +71,7 @@ const Footer = () => {
               name="message"
               onChange={handleChangeInput}
               id="message"
+              required
             />
           </div>
           <button
