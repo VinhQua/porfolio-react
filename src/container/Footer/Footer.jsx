@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.scss";
 import { images } from "../../constants";
 import { AppWrap } from "../../wrapper";
@@ -53,8 +53,8 @@ const Footer = () => {
           </div>
           <div className="app__flex">
             <input
-              type="text"
-              placeholder="Your Name"
+              type="email"
+              placeholder="Your Email"
               value={email}
               onChange={handleChangeInput}
               className="p-text"
