@@ -34,8 +34,9 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
-
+import mongoDB from "../assets/mongodb.svg";
 export default {
+  mongoDB,
   email,
   mobile,
   api,
