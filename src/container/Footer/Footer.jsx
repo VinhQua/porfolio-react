@@ -19,7 +19,15 @@ const Footer = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
+  useEffect(() => {
+    if (formState.submitting) {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
+  }, [formState]);
   return (
     <>
       <h2 className="head-text">Take a coffee and chat with me</h2>
