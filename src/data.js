@@ -3,7 +3,7 @@ export const navLinks = ["home", "about", "work", "skills", "contact"];
 export const projectType = [
   "React",
   "NodeJs",
-  "HTML && CSS",
+  "MERN Stack",
   "E-Commerce",
   "All",
 ];
