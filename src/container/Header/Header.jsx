@@ -29,9 +29,26 @@ const Header = () => {
               <h1 className="head-text">Quang</h1>
             </div>
           </div>
-          <div className="tag-cmp app_flex">
-            <p className="p-text">Front End Developer</p>
-            <p className="p-text">Back End Developer</p>
+          <div className="tag-cmp story app_flex">
+            {/* <p className="p-text">
+              I'm a Web Developer specializing in creating responsive, dynamic
+              websites and user-friendly UIs for diverse clients that support
+              business growth and drive marketing efforts.
+            </p> */}
+            <p className="p-text">
+              {" "}
+              I'm an English teacher and love working with kids and teenagers. I
+              enjoy carrying out my unique teaching approaches which result in
+              the improvement of my students ' learning performance. As a
+              result, the number of students at my center grows so rapidly that
+              Therefore, I have made a decision to work part-time as a Web
+              Developer and learn everything needed to create a web application
+              using MERN Stack.
+            </p>
+            <p className="p-text">
+              When not working, I enjoy traveling and singing with my guitar
+              🎸🎸🎸
+            </p>
           </div>
         </div>
       </motion.div>
