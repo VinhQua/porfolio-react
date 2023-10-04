@@ -41,9 +41,9 @@ const Header = () => {
               enjoy carrying out my unique teaching approaches which result in
               the improvement of my students ' learning performance. As a
               result, the number of students at my center grows so rapidly that
-              Therefore, I have made a decision to work part-time as a Web
-              Developer and learn everything needed to create a web application
-              using MERN Stack.
+              Therefore, I have made a decision to become a full stack Web
+              Developer specialized in E-commerce and Web apps to delevelop my app
+              using MERN and PERN Stack.
             </p>
             <p className="p-text">
               When not working, I enjoy traveling and singing with my guitar
