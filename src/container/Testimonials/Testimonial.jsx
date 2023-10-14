@@ -47,7 +47,7 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
-          <div className="app__testimonial-item app__flex">
+          {/* <div className="app__testimonial-item app__flex">
             <img src={test?.imgUrl} alt="testimonials" />
             <div className="app__testimonial-content">
               <p className="p-text">{test?.feedback}</p>
@@ -82,7 +82,7 @@ const Testimonial = () => {
             >
               <HiChevronRight />
             </div>
-          </div>
+          </div> */}
 
           <div className="app__testimonial-brands app__flex">
             {brands.map((brand) => {
