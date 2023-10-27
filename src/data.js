@@ -4,6 +4,7 @@ export const projectType = [
   "React",
   "NodeJs",
   "MERN Stack",
+  "PERN Stack",
   "E-Commerce",
   "All",
 ];
