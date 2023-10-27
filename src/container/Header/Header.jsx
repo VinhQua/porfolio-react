@@ -42,8 +42,8 @@ const Header = () => {
               the improvement of my students ' learning performance. As a
               result, the number of students at my center grows so rapidly that
               Therefore, I have made a decision to become a full stack Web
-              Developer specialized in E-commerce and Web apps to delevelop my app
-              using MERN and PERN Stack.
+              Developer specialized in E-commerce and Web apps to delevelop my
+              app using MERN and PERN Stack.
             </p>
             <p className="p-text">
               When not working, I enjoy traveling and singing with my guitar
@@ -77,7 +77,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.react, images.node, images.mongoDB].map((image, i) => {
+        {[images.react, images.node, images.postgresql].map((image, i) => {
           return (
             <div key={`circle-${i}`} className="circle-cmp app__flex">
               <img src={image} alt="circle" />

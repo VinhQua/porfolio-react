@@ -35,7 +35,9 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import mongoDB from "../assets/mongodb.svg";
+import postgresql from "../assets/Postgresql.png";
 export default {
+  postgresql,
   mongoDB,
   email,
   mobile,
