@@ -30,25 +30,15 @@ const Header = () => {
             </div>
           </div>
           <div className="tag-cmp story app_flex">
-            {/* <p className="p-text">
-              I'm a Web Developer specializing in creating responsive, dynamic
-              websites and user-friendly UIs for diverse clients that support
-              business growth and drive marketing efforts.
-            </p> */}
+      
             <p className="p-text">
-              {" "}
-              I'm an English teacher and love working with kids and teenagers. I
-              enjoy carrying out my unique teaching approaches which result in
-              the improvement of my students ' learning performance. As a
-              result, the number of students at my center grows so rapidly that
-              Therefore, I have made a decision to become a full stack Web
-              Developer specialized in E-commerce and Web apps to delevelop my
-              app using MERN and PERN Stack.
+            I'm a full stack Developer specializing in creating E-Commerce sites and Web apps using MERN and PERN stack a for diverse needs of the growing market. I am also experienced in leading an agile team to develop full stack projects. I once created a student managing app using Excel VBA while I was an English teacher. Since then I discovered my passion for tech.
+      
             </p>
-            <p className="p-text">
+            {/* <p className="p-text">
               When not working, I enjoy traveling and singing with my guitar
               🎸🎸🎸
-            </p>
+            </p> */}
           </div>
         </div>
       </motion.div>
