@@ -32,7 +32,7 @@ const Header = () => {
           <div className="tag-cmp story app_flex">
       
             <p className="p-text">
-            I'm a full stack Developer specializing in creating E-Commerce sites and Web apps using MERN and PERN stack a for diverse needs of the growing market. I am also experienced in leading an agile team to develop full stack projects. I once created a student managing app using Excel VBA while I was an English teacher. Since then I discovered my passion for tech.
+            I'm a full stack Developer specializing in creating E-Commerce sites and Web apps using MERN and PERN stack a for diverse needs of the growing market. I am also experienced in leading an agile team to develop full stack projects. I am developing PERN stack app to manage students' attendance and learning performance while running an English language centre.
       
             </p>
             {/* <p className="p-text">
